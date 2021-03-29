@@ -9,13 +9,9 @@
 > Run ```npm install``` on terminal
 
 > Enable your google map api
-
 > - Maps SDK for iOS
-
 > - Maps SDK for Android
-
 > - Places API
-
 > - Directions API
 
 > Make ```.env``` File in your proj dir and paste below code

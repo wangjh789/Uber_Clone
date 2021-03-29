@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {View, Text, TextInput, SafeAreaView} from 'react-native';
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 import {useNavigation} from '@react-navigation/native';
+import Config from 'react-native-config';
 
 import PlaceRow from './PlaceRow.js';
 import styles from './styles.js';
@@ -64,7 +65,7 @@ const DestinaionSearch = props => {
           }}
           fetchDetails
           query={{
-            key: 'AIzaSyBbpniQ5_32NpYRD3Z9WpJV1A9Se1LbbFw',
+            key: Config.GOOGLE_MAPS_APIKEY,
             language: 'en',
           }}
           renderRow={data => <PlaceRow data={data} />}

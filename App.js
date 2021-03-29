@@ -7,9 +7,8 @@
  */
 
 import 'react-native-gesture-handler';
-
 import React, {useEffect} from 'react';
-import {Platform, StatusBar} from 'react-native';
+import {Platform, StatusBar,PermissionsAndroid} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 
 import Router from './src/navigation/Root';
